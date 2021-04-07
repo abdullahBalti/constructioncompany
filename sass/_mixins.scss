@@ -1,0 +1,13 @@
+
+
+@mixin df_jc_fw{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}
+@mixin madia_small{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;	
+}

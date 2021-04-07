@@ -1,0 +1,65 @@
+@import "variables";
+@import "mixins";
+.container{
+	width: 85%;
+	margin: auto;
+}
+.header{
+	.top-nav{
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid #3e4656;
+	background-color: $topBgcolor;
+	color: #ffff;
+	line-height: 50px;
+	.top-nav-content{
+		@include df_jc_fw;		
+		.lef-item{
+			@include df_jc_fw;			
+			width: 50%;
+			font-size: 13px;
+			}
+		.right-item{
+			@include df_jc_fw;			
+			width: 15%;
+			}
+		}		
+	}
+	.main-nav{
+	width: 100%;
+	height: auto;
+	background-color: #1e2e45;
+	color: #ffff;
+	line-height: 100px;
+	.main-nav-item{
+		@include df_jc_fw;			
+		.logo img{
+			margin-top: 20px;
+			}
+		.nav{
+			@include df_jc_fw;			
+			width: 50%;
+			text-transform: capitalize;
+			}
+		.contact-naw button{
+			padding: 15px 20px;
+			background-color: #ff5f13;
+			border: none;
+			border-radius: 10px;
+			color: #ffff;
+			text-transform: uppercase;
+			}
+		.nav-toggle{
+			display: none;
+			}
+		}
+	}	
+}
+// end of header
+// section banner
+.banner{
+	width: 100%;
+	height: 75vh;
+	background-image: url('../image/h1_hero.webp');
+	background-size: cover;
+}
